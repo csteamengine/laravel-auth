@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repositories\Backend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Backend\Auth;
 
-use App\Models\Auth\User;
-use App\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
 
 /**
  * Class SessionRepository.

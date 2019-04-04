@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Notifications\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Notifications\Frontend\Auth;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;

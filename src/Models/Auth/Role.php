@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models\Auth;
+namespace Csteamengine\LaravelAuth\Models\Auth;
 
-use App\Models\Auth\Traits\Method\RoleMethod;
-use App\Models\Auth\Traits\Attribute\RoleAttribute;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Method\RoleMethod;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Attribute\RoleAttribute;
 
 /**
  * Class Role.

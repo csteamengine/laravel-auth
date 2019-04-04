@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Http\Requests\RegisterRequest;
-use App\Helpers\Frontend\Auth\Socialite;
-use App\Events\Frontend\Auth\UserRegistered;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Requests\RegisterRequest;
+use Csteamengine\LaravelAuth\Helpers\Frontend\Auth\Socialite;
+use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserRegistered;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Repositories\Frontend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserRepository;
 
 /**
  * Class RegisterController.

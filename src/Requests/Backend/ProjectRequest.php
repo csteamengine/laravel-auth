@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\Backend;
+namespace Csteamengine\LaravelAuth\Requests\Backend;
 
-use App\Models\Project;
+use Csteamengine\LaravelAuth\Models\Project;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProjectRequest extends FormRequest

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Auth;
+namespace Csteamengine\LaravelAuth\Models\Auth;
 
 use Illuminate\Database\Eloquent\Model;
 

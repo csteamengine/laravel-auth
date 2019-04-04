@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models\Auth\Traits\Relationship;
+namespace Csteamengine\LaravelAuth\Models\Auth\Traits\Relationship;
 
-use App\Models\System\Session;
-use App\Models\Auth\SocialAccount;
-use App\Models\Auth\PasswordHistory;
+use Csteamengine\LaravelAuth\Models\System\Session;
+use Csteamengine\LaravelAuth\Models\Auth\SocialAccount;
+use Csteamengine\LaravelAuth\Models\Auth\PasswordHistory;
 
 /**
  * Class UserRelationship.

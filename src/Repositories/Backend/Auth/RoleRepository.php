@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Repositories\Backend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Backend\Auth;
 
-use App\Models\Auth\Role;
+use Csteamengine\LaravelAuth\Models\Auth\Role;
 use Illuminate\Support\Facades\DB;
-use App\Exceptions\GeneralException;
-use App\Repositories\BaseRepository;
-use App\Events\Backend\Auth\Role\RoleCreated;
-use App\Events\Backend\Auth\Role\RoleUpdated;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Repositories\BaseRepository;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleCreated;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleUpdated;
 
 /**
  * Class RoleRepository.

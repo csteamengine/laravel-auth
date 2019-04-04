@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Repositories\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Frontend\Auth;
 
 use Carbon\Carbon;
-use App\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\User;
 use Illuminate\Http\UploadedFile;
-use App\Models\Auth\SocialAccount;
+use Csteamengine\LaravelAuth\Models\Auth\SocialAccount;
 use Illuminate\Support\Facades\DB;
-use App\Exceptions\GeneralException;
-use App\Repositories\BaseRepository;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Repositories\BaseRepository;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
-use App\Events\Frontend\Auth\UserConfirmed;
-use App\Events\Frontend\Auth\UserProviderRegistered;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserConfirmed;
+use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserProviderRegistered;
+use Csteamengine\LaravelAuth\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 /**
  * Class UserRepository.

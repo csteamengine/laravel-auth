@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Repositories\Frontend\Auth\UserRepository;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 /**
  * Class ConfirmAccountController.
@@ -30,7 +30,7 @@ class ConfirmAccountController extends Controller
      * @param $token
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function confirm($token)
     {
@@ -43,7 +43,7 @@ class ConfirmAccountController extends Controller
      * @param $uuid
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function sendConfirmationEmail($uuid)
     {

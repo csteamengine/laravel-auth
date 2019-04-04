@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners\Backend\Auth\Role;
+namespace Csteamengine\LaravelAuth\Listeners\Backend\Auth\Role;
 
 /**
  * Class RoleEventListener.
@@ -39,18 +39,18 @@ class RoleEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleCreated::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onCreated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleCreated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\Role\RoleEventListener@onCreated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleUpdated::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onUpdated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleUpdated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\Role\RoleEventListener@onUpdated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\Role\RoleDeleted::class,
-            'App\Listeners\Backend\Auth\Role\RoleEventListener@onDeleted'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleDeleted::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\Role\RoleEventListener@onDeleted'
         );
     }
 }

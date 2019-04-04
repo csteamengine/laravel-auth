@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\User;
 
-use App\Models\Auth\User;
-use App\Http\Controllers\Controller;
-use App\Events\Backend\Auth\User\UserDeleted;
-use App\Repositories\Backend\Auth\RoleRepository;
-use App\Repositories\Backend\Auth\UserRepository;
-use App\Repositories\Backend\Auth\PermissionRepository;
-use App\Http\Requests\Backend\Auth\User\StoreUserRequest;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
-use App\Http\Requests\Backend\Auth\User\UpdateUserRequest;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserDeleted;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\RoleRepository;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\PermissionRepository;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\StoreUserRequest;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\ManageUserRequest;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\UpdateUserRequest;
 
 /**
  * Class UserController.
@@ -121,7 +121,7 @@ class UserController extends Controller
      * @param User              $user
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      * @throws \Throwable
      */
     public function update(UpdateUserRequest $request, User $user)

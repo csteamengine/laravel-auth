@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Repositories\Backend\Access\User;
+namespace Csteamengine\LaravelAuth\Repositories\Backend\Access\User;
 
-use App\Models\Auth\User;
-use App\Models\Auth\SocialAccount;
-use App\Exceptions\GeneralException;
-use App\Events\Backend\Auth\User\UserSocialDeleted;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\SocialAccount;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserSocialDeleted;
 
 /**
  * Class SocialRepository.

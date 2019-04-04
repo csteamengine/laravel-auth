@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
 use Illuminate\Support\Str;
-use App\Http\Controllers\Controller;
+use Csteamengine\LaravelAuth\Controllers\Controller;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Foundation\Auth\ResetsPasswords;
-use App\Repositories\Frontend\Auth\UserRepository;
-use App\Http\Requests\Frontend\Auth\ResetPasswordRequest;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Requests\Frontend\Auth\ResetPasswordRequest;
 
 /**
  * Class ResetPasswordController.

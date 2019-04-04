@@ -1,23 +1,23 @@
 <?php
 
-namespace App\Repositories\Backend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Backend\Auth;
 
-use App\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\User;
 use Illuminate\Support\Facades\DB;
-use App\Exceptions\GeneralException;
-use App\Repositories\BaseRepository;
-use App\Events\Backend\Auth\User\UserCreated;
-use App\Events\Backend\Auth\User\UserUpdated;
-use App\Events\Backend\Auth\User\UserRestored;
-use App\Events\Backend\Auth\User\UserConfirmed;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Repositories\BaseRepository;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserCreated;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserUpdated;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserRestored;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserConfirmed;
 use Illuminate\Pagination\LengthAwarePaginator;
-use App\Events\Backend\Auth\User\UserDeactivated;
-use App\Events\Backend\Auth\User\UserReactivated;
-use App\Events\Backend\Auth\User\UserUnconfirmed;
-use App\Events\Backend\Auth\User\UserPasswordChanged;
-use App\Notifications\Backend\Auth\UserAccountActive;
-use App\Events\Backend\Auth\User\UserPermanentlyDeleted;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserDeactivated;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserReactivated;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserUnconfirmed;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserPasswordChanged;
+use Csteamengine\LaravelAuth\Notifications\Backend\Auth\UserAccountActive;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserPermanentlyDeleted;
+use Csteamengine\LaravelAuth\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 /**
  * Class UserRepository.

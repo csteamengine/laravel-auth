@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\User;
 
-use App\Models\Auth\User;
-use App\Models\Auth\SocialAccount;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
-use App\Repositories\Backend\Access\User\SocialRepository;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\SocialAccount;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\ManageUserRequest;
+use Csteamengine\LaravelAuth\Repositories\Backend\Access\User\SocialRepository;
 
 /**
  * Class UserSocialController.
@@ -20,7 +20,7 @@ class UserSocialController extends Controller
      * @param SocialAccount     $social
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function unlink(ManageUserRequest $request, SocialRepository $socialRepository, User $user, SocialAccount $social)
     {

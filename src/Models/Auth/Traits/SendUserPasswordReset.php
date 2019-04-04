@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models\Auth\Traits;
+namespace Csteamengine\LaravelAuth\Models\Auth\Traits;
 
-use App\Notifications\Frontend\Auth\UserNeedsPasswordReset;
+use Csteamengine\LaravelAuth\Notifications\Frontend\Auth\UserNeedsPasswordReset;
 
 /**
  * Class SendUserPasswordReset.

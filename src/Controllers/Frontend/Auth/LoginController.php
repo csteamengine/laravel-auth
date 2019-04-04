@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
-use App\Helpers\Auth\Auth;
+use Csteamengine\LaravelAuth\Helpers\Auth\Auth;
 use Illuminate\Http\Request;
-use App\Exceptions\GeneralException;
-use App\Http\Controllers\Controller;
-use App\Helpers\Frontend\Auth\Socialite;
-use App\Events\Frontend\Auth\UserLoggedIn;
-use App\Events\Frontend\Auth\UserLoggedOut;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Helpers\Frontend\Auth\Socialite;
+use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedIn;
+use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedOut;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use App\Repositories\Frontend\Auth\UserSessionRepository;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserSessionRepository;
 
 /**
  * Class LoginController.

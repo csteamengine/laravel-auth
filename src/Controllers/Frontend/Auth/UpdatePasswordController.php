@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Repositories\Frontend\Auth\UserRepository;
-use App\Http\Requests\Frontend\User\UpdatePasswordRequest;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Requests\Frontend\User\UpdatePasswordRequest;
 
 /**
  * Class UpdatePasswordController.
@@ -30,7 +30,7 @@ class UpdatePasswordController extends Controller
      * @param UpdatePasswordRequest $request
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function update(UpdatePasswordRequest $request)
     {

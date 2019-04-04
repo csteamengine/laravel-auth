@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Listeners\Frontend\Auth;
 
 use Carbon\Carbon;
 
@@ -77,28 +77,28 @@ class UserEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Frontend\Auth\UserLoggedIn::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
+            \Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedIn::class,
+            'Csteamengine\LaravelAuth\Listeners\Frontend\Auth\UserEventListener@onLoggedIn'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserLoggedOut::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
+            \Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedOut::class,
+            'Csteamengine\LaravelAuth\Listeners\Frontend\Auth\UserEventListener@onLoggedOut'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserRegistered::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onRegistered'
+            \Csteamengine\LaravelAuth\Events\Frontend\Auth\UserRegistered::class,
+            'Csteamengine\LaravelAuth\Listeners\Frontend\Auth\UserEventListener@onRegistered'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserProviderRegistered::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onProviderRegistered'
+            \Csteamengine\LaravelAuth\Events\Frontend\Auth\UserProviderRegistered::class,
+            'Csteamengine\LaravelAuth\Listeners\Frontend\Auth\UserEventListener@onProviderRegistered'
         );
 
         $events->listen(
-            \App\Events\Frontend\Auth\UserConfirmed::class,
-            'App\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
+            \Csteamengine\LaravelAuth\Events\Frontend\Auth\UserConfirmed::class,
+            'Csteamengine\LaravelAuth\Listeners\Frontend\Auth\UserEventListener@onConfirmed'
         );
     }
 }

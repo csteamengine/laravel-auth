@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\Role;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\Role;
 
-use App\Models\Auth\Role;
-use App\Http\Controllers\Controller;
-use App\Events\Backend\Auth\Role\RoleDeleted;
-use App\Repositories\Backend\Auth\RoleRepository;
-use App\Repositories\Backend\Auth\PermissionRepository;
-use App\Http\Requests\Backend\Auth\Role\StoreRoleRequest;
-use App\Http\Requests\Backend\Auth\Role\ManageRoleRequest;
-use App\Http\Requests\Backend\Auth\Role\UpdateRoleRequest;
+use Csteamengine\LaravelAuth\Models\Auth\Role;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Events\Backend\Auth\Role\RoleDeleted;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\RoleRepository;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\PermissionRepository;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\Role\StoreRoleRequest;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\Role\ManageRoleRequest;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\Role\UpdateRoleRequest;
 
 /**
  * Class RoleController.
@@ -65,7 +65,7 @@ class RoleController extends Controller
      * @param StoreRoleRequest $request
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function store(StoreRoleRequest $request)
     {
@@ -97,7 +97,7 @@ class RoleController extends Controller
      * @param Role              $role
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function update(UpdateRoleRequest $request, Role $role)
     {

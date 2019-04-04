@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\User;
 
-use App\Models\Auth\User;
-use App\Http\Controllers\Controller;
-use App\Repositories\Backend\Auth\UserRepository;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
-use App\Notifications\Frontend\Auth\UserNeedsConfirmation;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\ManageUserRequest;
+use Csteamengine\LaravelAuth\Notifications\Frontend\Auth\UserNeedsConfirmation;
 
 /**
  * Class UserConfirmationController.
@@ -53,7 +53,7 @@ class UserConfirmationController extends Controller
      * @param User              $user
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function confirm(ManageUserRequest $request, User $user)
     {
@@ -67,7 +67,7 @@ class UserConfirmationController extends Controller
      * @param User              $user
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function unconfirm(ManageUserRequest $request, User $user)
     {

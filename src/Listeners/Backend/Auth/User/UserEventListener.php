@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Listeners\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Listeners\Backend\Auth\User;
 
 /**
  * Class UserEventListener.
@@ -103,58 +103,58 @@ class UserEventListener
     public function subscribe($events)
     {
         $events->listen(
-            \App\Events\Backend\Auth\User\UserCreated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onCreated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserCreated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onCreated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserUpdated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onUpdated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserUpdated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onUpdated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onDeleted'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserDeleted::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserConfirmed::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onConfirmed'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserConfirmed::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onConfirmed'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserUnconfirmed::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onUnconfirmed'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserUnconfirmed::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onUnconfirmed'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserPasswordChanged::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onPasswordChanged'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserPasswordChanged::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onPasswordChanged'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserDeactivated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onDeactivated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserDeactivated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onDeactivated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserReactivated::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onReactivated'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserReactivated::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onReactivated'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserSocialDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onSocialDeleted'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserSocialDeleted::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onSocialDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserPermanentlyDeleted::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onPermanentlyDeleted'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserPermanentlyDeleted::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onPermanentlyDeleted'
         );
 
         $events->listen(
-            \App\Events\Backend\Auth\User\UserRestored::class,
-            'App\Listeners\Backend\Auth\User\UserEventListener@onRestored'
+            \Csteamengine\LaravelAuth\Events\Backend\Auth\User\UserRestored::class,
+            'Csteamengine\LaravelAuth\Listeners\Backend\Auth\User\UserEventListener@onRestored'
         );
     }
 }

@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Models\Auth;
+namespace Csteamengine\LaravelAuth\Models\Auth;
 
-use App\Models\Traits\Uuid;
+use Csteamengine\LaravelAuth\Models\Traits\Uuid;
 use Laravel\Cashier\Billable;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
-use App\Models\Auth\Traits\Scope\UserScope;
-use App\Models\Auth\Traits\Method\UserMethod;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Scope\UserScope;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Method\UserMethod;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use App\Models\Auth\Traits\SendUserPasswordReset;
-use App\Models\Auth\Traits\Attribute\UserAttribute;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\SendUserPasswordReset;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Attribute\UserAttribute;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use App\Models\Auth\Traits\Relationship\UserRelationship;
+use Csteamengine\LaravelAuth\Models\Auth\Traits\Relationship\UserRelationship;
 
 /**
  * Class User.
@@ -87,10 +87,10 @@ class User extends Authenticatable
     ];
 
     public function about_image(){
-        return $this->belongsTo('App\Models\Image', 'about_image_id', 'id');
+        return $this->belongsTo('Csteamengine\LaravelAuth\Models\Image', 'about_image_id', 'id');
     }
 
     public function background_image(){
-        return $this->belongsTo('App\Models\Image', 'background_image_id', 'id');
+        return $this->belongsTo('Csteamengine\LaravelAuth\Models\Image', 'background_image_id', 'id');
     }
 }

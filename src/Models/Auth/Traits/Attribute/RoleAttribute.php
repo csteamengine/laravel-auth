@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Auth\Traits\Attribute;
+namespace Csteamengine\LaravelAuth\Models\Auth\Traits\Attribute;
 
 /**
  * Trait RoleAttribute.

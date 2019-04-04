@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\User;
 
-use App\Models\Auth\User;
-use App\Helpers\Auth\Auth;
-use App\Exceptions\GeneralException;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Helpers\Auth\Auth;
+use Csteamengine\LaravelAuth\Exceptions\GeneralException;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\ManageUserRequest;
 
 /**
  * Class UserAccessController.

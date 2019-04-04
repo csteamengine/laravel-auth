@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Requests\Backend\Auth\User;
 
-use App\Rules\Auth\ChangePassword;
-use App\Rules\Auth\UnusedPassword;
+use Csteamengine\LaravelAuth\Rules\Auth\ChangePassword;
+use Csteamengine\LaravelAuth\Rules\Auth\UnusedPassword;
 use Illuminate\Foundation\Http\FormRequest;
 use DivineOmega\LaravelPasswordExposedValidationRule\PasswordExposed;
 

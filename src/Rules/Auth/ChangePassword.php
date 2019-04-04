@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Rules\Auth;
+namespace Csteamengine\LaravelAuth\Rules\Auth;
 
 use Illuminate\Contracts\Validation\Rule;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Frontend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Frontend\Auth;
 
-use App\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\User;
 
 /**
  * Class UserSessionRepository.

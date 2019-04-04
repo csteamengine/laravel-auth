@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Requests\Backend\Auth\User;
 
 use Illuminate\Foundation\Http\FormRequest;
 

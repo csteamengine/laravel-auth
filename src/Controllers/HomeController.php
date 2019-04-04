@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend;
+namespace Csteamengine\LaravelAuthHttp\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
-use App\Models\Auth\User;
-use App\Models\Image;
+use Csteamengine\LaravelAuthHttp\Controllers\Controller;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Image;
 
 /**
  * Class HomeController.

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Backend\Auth\User;
+namespace Csteamengine\LaravelAuth\Controllers\Backend\Auth\User;
 
-use App\Models\Auth\User;
-use App\Http\Controllers\Controller;
-use App\Repositories\Backend\Auth\UserRepository;
-use App\Http\Requests\Backend\Auth\User\ManageUserRequest;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Repositories\Backend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Requests\Backend\Auth\User\ManageUserRequest;
 
 /**
  * Class UserStatusController.
@@ -53,7 +53,7 @@ class UserStatusController extends Controller
      * @param                   $status
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function mark(ManageUserRequest $request, User $user, $status)
     {
@@ -71,7 +71,7 @@ class UserStatusController extends Controller
      * @param User              $deletedUser
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      * @throws \Throwable
      */
     public function delete(ManageUserRequest $request, User $deletedUser)
@@ -86,7 +86,7 @@ class UserStatusController extends Controller
      * @param User              $deletedUser
      *
      * @return mixed
-     * @throws \App\Exceptions\GeneralException
+     * @throws \Csteamengine\LaravelAuth\Exceptions\GeneralException
      */
     public function restore(ManageUserRequest $request, User $deletedUser)
     {

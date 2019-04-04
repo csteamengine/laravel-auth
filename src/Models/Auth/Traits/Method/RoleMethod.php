@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Auth\Traits\Method;
+namespace Csteamengine\LaravelAuth\Models\Auth\Traits\Method;
 
 /**
  * Trait RoleMethod.

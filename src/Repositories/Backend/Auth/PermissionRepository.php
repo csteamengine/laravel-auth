@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Backend\Auth;
+namespace Csteamengine\LaravelAuth\Repositories\Backend\Auth;
 
-use App\Repositories\BaseRepository;
+use Csteamengine\LaravelAuth\Repositories\BaseRepository;
 use Spatie\Permission\Models\Permission;
 
 /**

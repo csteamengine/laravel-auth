@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace Csteamengine\LaravelAuth\Requests\Fronten\Auth;
 
 use Illuminate\Validation\Rule;
 use Arcanedev\NoCaptcha\Rules\CaptchaRule;

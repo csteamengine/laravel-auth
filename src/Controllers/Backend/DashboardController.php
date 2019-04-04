@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Backend;
+namespace Csteamengine\LaravelAuth\Controllers\Backend;
 
-use App\Http\Controllers\Controller;
+use Csteamengine\LaravelAuth\Controllers\Controller;
 use Route;
 
 /**

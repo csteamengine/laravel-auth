@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Requests\Frontend\User;
+namespace Csteamengine\LaravelAuth\Requests\Frontend\User;
 
 use Illuminate\Validation\Rule;
-use App\Helpers\Frontend\Auth\Socialite;
+use Csteamengine\LaravelAuth\Helpers\Frontend\Auth\Socialite;
 use Illuminate\Foundation\Http\FormRequest;
 
 /**
