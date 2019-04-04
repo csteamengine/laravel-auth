@@ -1,0 +1,37 @@
+{
+    "name": "csteamengine/laravel-auth",
+    "description": "User Authenticator and admin site package",
+    "keywords": ["template", "composer", "package"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charlie Steenhagen",
+            "email": "csteen1005@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=7.2",
+        "laravel/framework": "^5.8"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "classmap": [
+            "src/database/migrations"
+        ],
+        "psr-4": {
+            "Csteamengine\\LaravelAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Csteamengine\\LaravelAuth\\LaravelAuthServiceProvider"
+            ],
+            "aliases": {
+                "TestComposerPackage": "Csteamengine\\LaravelAuth\\LaravelAuthServiceProvider"
+            }
+        }
+    }
+}
