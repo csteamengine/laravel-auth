@@ -1,0 +1,22 @@
+// Override the Bootstrap defaults without modifying key, versioned files.
+body{
+  background-color: #fcfcfc;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.header-icon{
+  height: 25px;
+  opacity: .5;
+}
+
+.header-icon:hover{
+  opacity: 1;
+}
+
+.navbar-brand{
+  font-size: 30px;
+}
+
+.navbar-icons{
+  display: inherit;
+}
