@@ -4,9 +4,9 @@ namespace Csteamengine\LaravelAuth\Controllers\Frontend\Auth;
 
 use Csteamengine\LaravelAuth\Helpers\Auth\Auth;
 use Illuminate\Http\Request;
+use Csteamengine\LaravelAuth\Helpers\Frontend\Auth\Socialite;
 use Csteamengine\LaravelAuth\Exceptions\GeneralException;
 use Csteamengine\LaravelAuth\Controllers\Controller;
-use Csteamengine\LaravelAuth\Helpers\Frontend\Auth\Socialite;
 use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedIn;
 use Csteamengine\LaravelAuth\Events\Frontend\Auth\UserLoggedOut;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -34,7 +34,7 @@ class LoginController extends Controller
      */
     public function showLoginForm()
     {
-        return view('frontend.auth.login')
+        return view('LaravelAuth::frontend.auth.login')
             ->withSocialiteLinks((new Socialite)->getSocialLinks());
     }
 
