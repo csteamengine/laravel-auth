@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\User;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\User;
 
-use App\Http\Controllers\Controller;
-use App\Repositories\Frontend\Auth\UserRepository;
-use App\Http\Requests\Frontend\User\UpdateProfileRequest;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Repositories\Frontend\Auth\UserRepository;
+use Csteamengine\LaravelAuth\Requests\Frontend\User\UpdateProfileRequest;
 
 /**
  * Class ProfileController.

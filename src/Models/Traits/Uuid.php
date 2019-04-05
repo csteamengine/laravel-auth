@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Traits;
+namespace Csteamengine\LaravelAuth\Models\Traits;
 
 use Webpatser\Uuid\Uuid as PackageUuid;
 

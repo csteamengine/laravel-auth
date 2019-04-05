@@ -20,9 +20,9 @@
 
         <!-- Check if the language is set to RTL, so apply the RTL layouts -->
         <!-- Otherwise apply the normal LTR layouts -->
-        {{ style(mix('css/frontend.css')) }}
+{{--        {{ style(mix('css/frontend.css', '/src/public')) }}--}}
 
-        @stack('after-styles')
+{{--        @stack('after-styles')--}}
     </head>
     <body>
         <div id="app">
@@ -30,17 +30,17 @@
             @include('LaravelAuth::frontend.includes.nav')
 
             <div class="container">
-                @include('LaravelAuth::includes.partials.messages')
+{{--                @include('LaravelAuth::includes.partials.messages')--}}
                 @yield('content')
             </div><!-- container -->
         </div><!-- #app -->
 
-        <!-- Scripts -->
-        @stack('before-scripts')
-        {!! script(mix('js/manifest.js')) !!}
-        {!! script(mix('js/vendor.js')) !!}
-        {!! script(mix('js/frontend.js')) !!}
-        @stack('after-scripts')
+{{--        <!-- Scripts -->--}}
+{{--        @stack('before-scripts')--}}
+{{--        {!! script(mix('js/manifest.js')) !!}--}}
+{{--        {!! script(mix('js/vendor.js')) !!}--}}
+{{--        {!! script(mix('js/frontend.js')) !!}--}}
+{{--        @stack('after-scripts')--}}
 
         @include('LaravelAuth::includes.partials.ga')
     </body>

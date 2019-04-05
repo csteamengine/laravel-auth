@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\User;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\User;
 
-use App\Http\Controllers\Controller;
-use App\Models\Auth\User;
-use App\Models\System\Session;
+use Csteamengine\LaravelAuth\Controllers\Controller;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\System\Session;
 
 /**
  * Class AccountController.

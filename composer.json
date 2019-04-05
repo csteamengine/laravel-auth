@@ -16,7 +16,10 @@
         "barryvdh/laravel-ide-helper": "^2.6",
         "spatie/laravel-permission": "^2.5",
         "spatie/laravel-html": "^2.4",
-        "laravel/socialite": "^4.1"
+        "laravel/socialite": "^4.1",
+        "laravel/cashier": "^9.1",
+        "webpatser/laravel-uuid": "^3.0",
+        "hieu-le/active": "^3.5"
     },
     "require-dev": {
     },

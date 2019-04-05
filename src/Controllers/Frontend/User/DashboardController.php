@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers\Frontend\User;
+namespace Csteamengine\LaravelAuth\Controllers\Frontend\User;
 
-use App\Http\Controllers\Controller;
+use Csteamengine\LaravelAuth\Controllers\Controller;
 
 /**
  * Class DashboardController.

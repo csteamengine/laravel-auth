@@ -7,7 +7,7 @@ import axios from 'axios'
 import swal from 'sweetalert2';
 import $ from 'jquery';
 import 'popper.js/dist/umd/popper'; // Required for BS4
-import 'resources/js/bootstrap';
+import 'bootstrap';
 
 /**
  * Font Awesome >=5.1
