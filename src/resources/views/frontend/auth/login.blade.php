@@ -1,6 +1,6 @@
 @extends('LaravelAuth::frontend.layouts.app')
 
-@section('title', app_name() . ' | ' . __('labels.frontend.auth.login_box_title'))
+@section('title', app_name() . ' | ' . __('LaravelAuth::labels.frontend.auth.login_box_title'))
 
 @section('content')
     <div class="row justify-content-center align-items-center">
@@ -8,7 +8,7 @@
             <div class="card">
                 <div class="card-header">
                     <strong>
-                        @lang('labels.frontend.auth.login_box_title')
+                        @lang('LaravelAuth::labels.frontend.auth.login_box_title')
                     </strong>
                 </div><!--card-header-->
 

@@ -1,5 +1,7 @@
 <?php
 
+use Csteamengine\LaravelAuth\Helpers\General\HtmlHelper;
+
 if (! function_exists('include_route_files')) {
 
     /**

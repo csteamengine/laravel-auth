@@ -26,10 +26,14 @@ class LaravelAuthServiceProvider extends ServiceProvider
 //        $router = $this->app['router'];
         $this->publishes([
             __DIR__.'/config/auth.php' => config_path('auth.php'),
+            __DIR__.'/public/mix-manifest.json' => 'public/laravel-auth/mix-manifest.json',
+            __DIR__.'/public/css/' => 'public/laravel-auth/css/',
+            __DIR__.'/public/js/' => 'public/laravel-auth/js/',
         ]);
         $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'LaravelAuth');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'LaravelAuth');
 
 //        $router->middleware('auth', \Csteamengine\LaravelAuth\Middleware\Authenticate::class);
 //        $router->middleware('password_expires', \Csteamengine\LaravelAuth\Middleware\PasswordExpires::class);

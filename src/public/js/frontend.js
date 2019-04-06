@@ -18285,10 +18285,10 @@ $(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/gs57722/Projects/LaravelPackages/laravel-auth/src/resources/js/frontend/app.js */"./src/resources/js/frontend/app.js");
-__webpack_require__(/*! /home/gs57722/Projects/LaravelPackages/laravel-auth/src/resources/sass/frontend/app.scss */"./src/resources/sass/frontend/app.scss");
-__webpack_require__(/*! /home/gs57722/Projects/LaravelPackages/laravel-auth/src/resources/sass/backend/app.scss */"./src/resources/sass/backend/app.scss");
-module.exports = __webpack_require__(/*! /home/gs57722/Projects/LaravelPackages/laravel-auth/src/resources/sass/frontend/home.scss */"./src/resources/sass/frontend/home.scss");
+__webpack_require__(/*! /Users/gregorysteenhagen/Desktop/Projects/LaravelPackages/laravel-auth/src/resources/js/frontend/app.js */"./src/resources/js/frontend/app.js");
+__webpack_require__(/*! /Users/gregorysteenhagen/Desktop/Projects/LaravelPackages/laravel-auth/src/resources/sass/frontend/app.scss */"./src/resources/sass/frontend/app.scss");
+__webpack_require__(/*! /Users/gregorysteenhagen/Desktop/Projects/LaravelPackages/laravel-auth/src/resources/sass/backend/app.scss */"./src/resources/sass/backend/app.scss");
+module.exports = __webpack_require__(/*! /Users/gregorysteenhagen/Desktop/Projects/LaravelPackages/laravel-auth/src/resources/sass/frontend/home.scss */"./src/resources/sass/frontend/home.scss");
 
 
 /***/ })

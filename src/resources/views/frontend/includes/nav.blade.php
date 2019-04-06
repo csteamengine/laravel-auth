@@ -12,14 +12,14 @@
 
 
             @auth
-                <li class="nav-item"><a href="{{route('frontend.user.dashboard')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.user.dashboard')) }}">@lang('navs.frontend.dashboard')</a></li>
+                <li class="nav-item"><a href="{{route('frontend.user.dashboard')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.user.dashboard')) }}">@lang('LaravelAuth::navs.frontend.dashboard')</a></li>
             @endauth
 
             @guest
-                <li class="nav-item"><a href="{{route('frontend.auth.login')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.auth.login')) }}">@lang('navs.frontend.login')</a></li>
+                <li class="nav-item"><a href="{{route('frontend.auth.login')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.auth.login')) }}">@lang('LaravelAuth::navs.frontend.login')</a></li>
 
                 @if(config('access.registration'))
-                    <li class="nav-item"><a href="{{route('frontend.auth.register')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.auth.register')) }}">@lang('navs.frontend.register')</a></li>
+                    <li class="nav-item"><a href="{{route('frontend.auth.register')}}" class="nav-link {{ active_class(Active::checkUriPattern('frontend.auth.register')) }}">@lang('LaravelAuth::navs.frontend.register')</a></li>
                 @endif
             @else
                 <li class="nav-item dropdown">
@@ -28,11 +28,11 @@
 
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUser">
                         @can('view backend')
-                            <a href="{{ route('admin.dashboard') }}" class="dropdown-item">@lang('navs.frontend.user.administration')</a>
+                            <a href="{{ route('admin.dashboard') }}" class="dropdown-item">@lang('LaravelAuth::navs.frontend.user.administration')</a>
                         @endcan
 
-                        <a href="{{ route('frontend.user.account') }}" class="dropdown-item {{ active_class(Active::checkRoute('frontend.user.account')) }}">@lang('navs.frontend.user.account')</a>
-                        <a href="{{ route('frontend.auth.logout') }}" class="dropdown-item">@lang('navs.general.logout')</a>
+                        <a href="{{ route('frontend.user.account') }}" class="dropdown-item {{ active_class(Active::checkRoute('frontend.user.account')) }}">@lang('LaravelAuth::navs.frontend.user.account')</a>
+                        <a href="{{ route('frontend.auth.logout') }}" class="dropdown-item">@lang('LaravelAuth::navs.general.logout')</a>
                     </div>
                 </li>
             @endguest
