@@ -45,7 +45,7 @@ class LoginController extends Controller
      */
     public function username()
     {
-        return config('access.users.username');
+        return config('auth.users.username');
     }
 
     /**
@@ -59,6 +59,7 @@ class LoginController extends Controller
      */
     protected function authenticated(Request $request, $user)
     {
+
         /*
          * Check to see if the users account is confirmed and active
          */
@@ -81,7 +82,7 @@ class LoginController extends Controller
         event(new UserLoggedIn($user));
 
         // If only allowed one session at a time
-        if (config('access.users.single_login')) {
+        if (config('auth.users.single_login')) {
             resolve(UserSessionRepository::class)->clearSessionExceptCurrent($user);
         }
 
@@ -100,8 +101,8 @@ class LoginController extends Controller
         /*
          * Remove the socialite session variable if exists
          */
-        if (app('session')->has(config('access.socialite_session_name'))) {
-            app('session')->forget(config('access.socialite_session_name'));
+        if (app('session')->has(config('auth.socialite_session_name'))) {
+            app('session')->forget(config('auth.socialite_session_name'));
         }
 
         /*

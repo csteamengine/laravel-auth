@@ -1,5 +1,12 @@
 <?php
 
+namespace Csteamengine\LaravelAuth\Seeds;
+
+use Csteamengine\LaravelAuth\Seeds\Auth\PermissionRoleTableSeeder;
+use Csteamengine\LaravelAuth\Seeds\Auth\UserRoleTableSeeder;
+use Csteamengine\LaravelAuth\Seeds\Auth\UserTableSeeder;
+use Csteamengine\LaravelAuth\Seeds\Traits\DisableForeignKeys;
+use Csteamengine\LaravelAuth\Seeds\Traits\TruncateTable;
 use Illuminate\Database\Seeder;
 
 /**
@@ -27,26 +34,17 @@ class AuthTableSeeder extends Seeder
             config('permission.table_names.role_has_permissions'),
             config('permission.table_names.permissions'),
             config('permission.table_names.roles'),
-            config('access.table_names.users'),
-            config('access.table_names.password_histories'),
+            config('auth.table_names.users'),
+            config('auth.table_names.password_histories'),
             'password_resets',
             'social_accounts',
         ]);
 
-        $this->call(UserTableSeeder::class);
-        $this->call(PermissionRoleTableSeeder::class);
-        $this->call(UserRoleTableSeeder::class);
-        $this->call(CategoryTableSeeder::class);
-        $this->call(ProductTableSeeder::class);
-        $this->call(ProductCategoriesTableSeeder::class);
-        $this->call(SaleTableSeeder::class);
-        $this->call(SaleProductsTableSeeder::class);
-        $this->call(ImagesTableSeeder::class);
-        $this->call(ProductImagesTableSeeder::class);
-        $this->call(CartsTableSeeder::class);
-        $this->call(CartProductsTableSeeder::class);
-        $this->call(ProjectsTableSeeder::class);
-        $this->call(ProjectImagesTableSeeder::class);
+        $this->call([
+            UserTableSeeder::class,
+            PermissionRoleTableSeeder::class,
+            UserRoleTableSeeder::class
+        ]);
 
         $this->enableForeignKeys();
     }

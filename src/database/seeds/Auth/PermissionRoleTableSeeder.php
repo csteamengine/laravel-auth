@@ -1,5 +1,7 @@
 <?php
+namespace Csteamengine\LaravelAuth\Seeds\Auth;
 
+use Csteamengine\LaravelAuth\Seeds\Traits\DisableForeignKeys;
 use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
@@ -21,9 +23,9 @@ class PermissionRoleTableSeeder extends Seeder
         $this->disableForeignKeys();
 
         // Create Roles
-        $admin = Role::create(['name' => config('access.users.admin_role')]);
+        $admin = Role::create(['name' => config('auth.users.admin_role')]);
         $executive = Role::create(['name' => 'executive']);
-        $user = Role::create(['name' => config('access.users.default_role')]);
+        $user = Role::create(['name' => config('auth.users.default_role')]);
 
         // Create Permissions
         $permissions = ['view backend'];

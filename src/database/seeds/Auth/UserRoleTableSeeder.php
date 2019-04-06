@@ -1,6 +1,8 @@
 <?php
+namespace Csteamengine\LaravelAuth\Seeds\Auth;
 
-use App\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Seeds\Traits\DisableForeignKeys;
 use Illuminate\Database\Seeder;
 
 /**
@@ -19,9 +21,9 @@ class UserRoleTableSeeder extends Seeder
     {
         $this->disableForeignKeys();
 
-        User::find(1)->assignRole(config('access.users.admin_role'));
+        User::find(1)->assignRole(config('auth.users.admin_role'));
         User::find(2)->assignRole('executive');
-        User::find(3)->assignRole(config('access.users.default_role'));
+        User::find(3)->assignRole(config('auth.users.default_role'));
 
         $this->enableForeignKeys();
     }

@@ -29,7 +29,7 @@
             @include('LaravelAuth::frontend.includes.nav')
 
             <div class="container">
-{{--                @include('LaravelAuth::includes.partials.messages')--}}
+                @include('LaravelAuth::includes.partials.messages')
                 @yield('content')
             </div><!-- container -->
         </div><!-- #app -->

@@ -1,6 +1,8 @@
 <?php
+namespace Csteamengine\LaravelAuth\Seeds\Auth;
 
-use App\Models\Auth\User;
+use Csteamengine\LaravelAuth\Models\Auth\User;
+use Csteamengine\LaravelAuth\Seeds\Traits\DisableForeignKeys;
 use Illuminate\Database\Seeder;
 
 /**

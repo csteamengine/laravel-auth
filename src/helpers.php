@@ -73,3 +73,32 @@ if (! function_exists('script')) {
         return resolve(HtmlHelper::class)->script($url, $attributes, $secure);
     }
 }
+
+if (! function_exists('form_cancel')) {
+
+    /**
+     * @param        $cancel_to
+     * @param        $title
+     * @param string $classes
+     *
+     * @return mixed
+     */
+    function form_cancel($cancel_to, $title, $classes = 'btn btn-danger btn-sm')
+    {
+        return resolve(HtmlHelper::class)->formCancel($cancel_to, $title, $classes);
+    }
+}
+
+if (! function_exists('form_submit')) {
+
+    /**
+     * @param        $title
+     * @param string $classes
+     *
+     * @return mixed
+     */
+    function form_submit($title, $classes = 'btn btn-primary btn-sm')
+    {
+        return resolve(HtmlHelper::class)->formSubmit($title, $classes);
+    }
+}

@@ -1,4 +1,5 @@
 <?php
+namespace Csteamengine\LaravelAuth\Seeds\Traits;
 
 use Illuminate\Support\Facades\DB;
 
